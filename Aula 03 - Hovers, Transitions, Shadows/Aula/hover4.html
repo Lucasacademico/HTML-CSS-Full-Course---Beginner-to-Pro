@@ -1,0 +1,58 @@
+<style>
+    button{
+        border: none;
+        margin-left: 8px;
+        height: 36px;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    .subscribe-btn{
+        background-color: rgb(200, 0, 0);
+        color: white;
+        width: 110px;
+
+        /*Aumenta o tempo de transição da opacidade para 1segundo*/
+        transition: opacity 0.15s;
+    }
+    
+    .subscribe-btn:hover{
+        opacity: 0.6;
+    }
+    
+    .subscribe-btn:active{
+        opacity: 0.4;
+    }
+
+    .join-btn{
+        background-color: white;
+        color: rgb(41, 118, 211);
+        border: solid 2px rgb(41, 118, 211);
+        width: 70px;
+
+        /*Aumenta o tempo de transição do 'background-color' e 'color'para 1segundo*/
+        /*OBS: o 'transition' deve ficar direto na classe do botão, pois se for colocado no hover, só funcionará a transição de passar o mouse, mas se tirar o mouse, a transição irá ser instântanea, e não será aplicada*/
+        transition: background-color 1s, color 1s;
+    }
+
+    .join-btn:hover{
+        background-color: rgb(41, 118, 211);
+        color: white;
+    }
+    
+    .join-btn:active{
+        opacity: 0.5;
+    }
+
+    .tweet-btn{
+        background-color: rgb(41, 118, 211);
+        color: white;
+        width: 75px;
+        border-radius: 18px;
+        font-weight: bold;     
+    }
+
+</style>
+<button class="subscribe-btn">SUBSCRIBE</button>
+<button class="join-btn">JOIN</button>
+<button class="tweet-btn">Tweet</button>

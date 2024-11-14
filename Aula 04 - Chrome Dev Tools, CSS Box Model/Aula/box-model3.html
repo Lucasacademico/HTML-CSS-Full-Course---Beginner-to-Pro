@@ -1,0 +1,71 @@
+<!--Base utilizada para aula-->
+<style>
+    .subscribe-btn{
+        background-color: rgb(200, 0, 0);
+        color: white;
+        width: 110px;
+        transition: opacity 0.15s;
+        border: none;
+        margin-left: 8px;
+        height: 36px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 30px;
+        margin-left: 20px;        
+    }
+    
+    .subscribe-btn:hover{
+        opacity: 0.6;
+    }
+    
+    .subscribe-btn:active{
+        opacity: 0.4;
+    }
+
+    .join-btn{
+        background-color: white;
+        color: rgb(41, 118, 211);
+        border: solid 2px rgb(41, 118, 211);
+
+        /*Padding é uma margem interna (entre o texto e a borda*/
+        /*Podemos configurar o padding para todos os lados do botão (e outros elementos)*/
+        padding-left: 30px;
+        padding-top: 20px;
+
+        transition: background-color 0.15s, color 0.15s;
+        margin-left: 8px;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    .join-btn:hover{
+        background-color: rgb(41, 118, 211);
+        color: white;
+    }
+    
+    .join-btn:active{
+        opacity: 0.5;
+    }
+
+    .tweet-btn{
+        background-color: rgb(41, 118, 211);
+        color: white;
+        width: 75px;
+        border-radius: 18px;
+        font-weight: bold;    
+        transition: box-shadow 0.15s;
+        border: none;
+        margin-left: 8px;
+        height: 36px;
+        border-radius: 16px;
+        cursor: pointer;
+    }
+
+    .tweet-btn:hover{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15); 
+    }
+
+</style>
+<button class="subscribe-btn">SUBSCRIBE</button>
+<button class="join-btn">JOIN my channel!!!!!</button>
+<button class="tweet-btn">Tweet</button>

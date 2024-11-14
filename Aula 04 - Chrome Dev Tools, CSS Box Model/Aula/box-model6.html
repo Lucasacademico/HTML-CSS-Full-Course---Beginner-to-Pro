@@ -1,0 +1,88 @@
+<!--Para finalizar vamos ajustar o botão 'join' para ficar padrão com os outros botões-->
+
+<style>
+    .subscribe-btn{
+        background-color: rgb(200, 0, 0);
+        color: white;
+        transition: opacity 0.15s;
+        border: none;
+        margin-left: 8px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+        margin-left: 20px;     
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        /*Alinha o botão subscribe no topo*/
+        vertical-align: top;
+
+    }
+    
+    .subscribe-btn:hover{
+        opacity: 0.6;
+    }
+    
+    .subscribe-btn:active{
+        opacity: 0.4;
+    }
+
+    .join-btn{
+        background-color: white;
+        color: rgb(41, 118, 211);
+        border: solid rgb(41, 118, 211);
+        border-width: 1px;
+        transition: background-color 0.15s, color 0.15s;
+        margin-left: 8px;
+        border-radius: 2px;
+        cursor: pointer;
+
+        /*Reutilizado os paddings do botão 'subscribe'*/
+        /*OBS: Mesmo copiando as configs do padding do subscribe, o botão join ainda ficou um pouco maior, isso se da devido a borda que gera um pouco de altura no botão, logo basta compensarmos no padding top e bottom*/
+        /*Uma dica, é diminuir as configs pelo valor do border-width, que ficara no mesmo tamanho.*/
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+
+    .join-btn:hover{
+        background-color: rgb(41, 118, 211);
+        color: white;
+    }
+    
+    .join-btn:active{
+        opacity: 0.5;
+    }
+
+    .tweet-btn{
+        background-color: rgb(41, 118, 211);
+        color: white;
+        border-radius: 18px;
+        font-weight: bold;    
+        transition: box-shadow 0.15s;
+        border: none;
+        margin-left: 8px;
+        border-radius: 16px;
+        cursor: pointer;
+
+        /*Alinha o botão Tweet no topo*/
+        vertical-align: top;
+
+        /*Passando configs padrões do botão subscribe*/
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .tweet-btn:hover{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15); 
+    }
+
+</style>
+<button class="subscribe-btn">SUBSCRIBE</button>
+<button class="join-btn">JOIN</button>
+<button class="tweet-btn">Tweet</button>
